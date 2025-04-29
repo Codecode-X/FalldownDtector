@@ -1,0 +1,18 @@
+# 数据集路径
+# 训练数据配置文件（适用于 YOLOv5）
+train: /root/motor-yolo/mydata/COCO_motor/train/images  # 训练集图片路径
+val: /root/motor-yolo/mydata/COCO_motor/val/images  # 验证集图片路径
+
+# 类别数（根据 VOC 类别自动获取）
+nc: 3  # 你的数据集类别数（比如 VOC 有 20 类）
+
+# 类别
+names: ["bicycle", "motorcycle","person"]
+# names:
+#   0: bicycle
+#   1: motorcycle
+#   2: person
+
+
+# 训练
+# python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
